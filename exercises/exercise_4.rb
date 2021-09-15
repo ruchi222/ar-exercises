@@ -28,10 +28,10 @@ Store.create(name: "Yaletown",
 
 @mens_stores = Store.where(mens_apparel: true)
 @mens_stores.each.do | element |
-    puts "Name: #{element.name} Annual Revenue: #{element.annual_revenue}"
+    puts "Name: #{element.name} Annual_Revenue: #{element.annual_revenue}"
 end
 
 @womens_stores = Store.where(womens_apparel: true and annual_revenue < 1000000) 
 @womens_stores.each.do | element |
-    puts "Name: #{element.name} Annual Revenue: #{element.annual_revenue}"
+    puts "Name: #{element.name} Annual_Revenue: #{element.annual_revenue}"
 end
