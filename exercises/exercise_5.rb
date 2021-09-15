@@ -8,3 +8,12 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+@sum = Stores.sum(:annual_revenue)
+@aver = Stores.average(:annual_revenue)
+
+@mill = Stores.Where("annual_revenue >1000000").count
+
+puts @sum
+puts @aver
+puts @mill
